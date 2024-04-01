@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WearView Academy IT Technical Support - Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <div class="image-section">
+                <!-- Place your image here -->
+                <img src="../assets/first_image.png" alt="IT Support">
+            </div>
+        </div>
+        <div class="form-container">
+
+            <div class="form-section">
+                <div class="header-container">
+                    <span class="svg-icon"><img src="../assets/academy_logo.svg" alt="WearView Academy Logo"></span>
+                    <h2>WearView Academy IT Technical Support</h2>
+                </div>
+
+                <form id="itSupportFormRegister">
+                    <div class="form-group role-selection">
+                        <label>Select Your Role</label>
+                        <button type="button" id="staffMember" class="role-option">Staff Member</button>
+                        <button type="button" id="itTechnician" class="role-option">IT Technician</button>
+                    </div>                    
+                    <div class="registration-container">
+                        <h4>Register</h4>
+                        <h6>Hop Back In!</h6>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="First & Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="registerEmail" name="email" required placeholder="example@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="registerPassword" name="password" required placeholder="At least 6 characters">
+                    </div>
+                    <div class="form-group">
+                        <label for="repeatPassword">Repeat Password</label>
+                        <input type="password" id="repeatPassword" name="repeatPassword" required placeholder="Enter password again!">
+                    </div>
+
+                    <button type="submit">Submit Request</button>
+                    <p class="login-link">Already have an account? <a href="login.html">Log In</a></p>
+                </form>
+                <div class="form-group-1">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I have read and agree to the <a href="terms_and_conditions.html">Terms and Conditions</a>.</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

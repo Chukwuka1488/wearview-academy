@@ -1,0 +1,571 @@
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+/* *********** Header styling ************* */
+.header-container {
+    display: flex;
+    align-items: center; /* Centers the items vertically */
+}
+
+.registration-container h4 {
+    margin-bottom: 5px; /* Adds 10px space below the h4 */
+}
+
+.registration-container h6 {
+    margin-top: 0; /* Removes any default top margin from the h6 */
+}
+
+
+.svg-icon img {
+    height: 80px; /* Or whatever size fits your design */
+    width: auto; /* Maintains the aspect ratio */
+    margin-left: 10px; /* Adjust space between the text and the logo as needed */
+}
+
+/* *********** Image styling ************* */
+.image-container {
+    flex: 1; /* Each takes up equal width */
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */   
+}
+
+.image-section {
+    flex: 1; /* Each takes up equal width */
+    min-width: 300px; /* Minimum width before wrapping */
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional, for styling */
+}
+
+/* *********** Form styling ************* */
+.form-container {
+    flex: 1; /* Each takes up equal width */
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */   
+}
+
+.form-section {
+    flex: 1; /* Each takes up equal width */
+    min-width: 300px; /* Minimum width before wrapping */
+}
+
+.form-section {
+    padding: 20px;
+}
+
+/* Existing styles for form elements */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* *********** Button styling ************* */
+button {
+    background-color: #6a5acd;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6a5acd;
+}
+
+/* ************* Role selection ****************  */
+
+.role-selection {
+    display: flex; /* Ensures the buttons are on the same line */
+    gap: 10px; /* Optional: Adjusts the space between buttons */
+}
+
+.role-option {
+    max-width: 400px; /* Sets the maximum width of each button */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Hides text that overflows the button's width */
+    text-overflow: ellipsis; /* Adds an ellipsis to text that overflows */
+    background-color: white;
+    color: black;
+    border: 2px solid #ccc;
+    padding: 5px;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.7rem; /* Adjust the font size to try and fit text */
+}
+
+.role-option.selected {
+    background-color: #6a5acd; /* Background color for selected button */
+    color: white; /* Text color for selected button */
+    border-color: #6a5acd; /* Border color for selected button */
+}
+
+
+/* Style for form inputs, button, and role options */
+.form-group label,
+.form-group input,
+button {
+    display: block; /* Makes elements block-level for width control */
+    width: 100%; /* Ensures full width */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.form-group input,
+button {
+    height: 40px; /* Sets a standard height for inputs, role options, and button */
+    padding: 0 10px; /* Adds some padding inside elements */
+    margin-top: 5px; /* Adds a little space between label and input/role options */
+}
+
+
+/* Login */
+
+.login-link {
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px; /* Adjust as needed */
+    text-align: center;
+}
+
+.login-link a {
+    color: #007bff; /* Adjust the color to fit your design */
+    text-decoration: none; /* Optional: removes underline */
+}
+
+.login-link a:hover {
+    text-decoration: underline; /* Adds underline on hover for better UX */
+}
+
+
+/* This styles the container span around the checkbox and label */
+.form-group-1 {
+    display: flex;
+    align-items: center; /* This vertically centers the checkbox and label */
+}
+
+/* Style for the checkbox and label to ensure they are on the same line */
+.form-group-1 input[type="checkbox"] {
+    margin-right: 10px; /* Adds some space between the checkbox and the label */
+}
+
+.form-group-1 label {
+    margin: 0; /* Removes any default margin */
+    display: inline; /* Ensures the label does not break onto a new line */
+}
+
+/* Continue with existing styles */
+.form-group-1 a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.form-group-1 a:hover {
+    text-decoration: none;
+}
+
+/* Dashboard */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dashboard {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box; /* Ensures padding does not add to the total width */
+}
+
+ /* navbar  */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Adjusts content to each end */
+    background-color: #6a5acd;
+    padding: 20px; /* Adds space inside the navbar for any content */
+    box-sizing: border-box;
+
+}
+
+.navbar-icons {
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    justify-content: space-between;
+    height: 100%; /* Top 30% of the navbar */
+    width: 100%; /* Adjust width as needed */
+
+}
+
+
+
+
+.icon-btn {
+    display: flex; /* Aligns items in a row */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally, adjust if you prefer left alignment */
+    background: none;
+    border: 1px solid white; /* Adds a white border around the button */
+    border-radius: 10px; /* Applies rounded corners to the button */
+    cursor: pointer;
+    color: white; /* Default icon color */
+    width: 100%; /* Ensures the button fills its container */
+    margin-bottom: 8px; /* Adds space between buttons */
+    font-size: 12px; /* Adjusts the font size of the text */
+    padding: 5px; /* Adjusts padding for aesthetics */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.icon-btn:hover {
+    color: #95d5b2;
+}
+
+.icon-btn:focus, .icon-btn.active {
+    color: #95d5b2 /* Change icon color to purple when selected or hovered */
+}
+
+.icon-btn i {
+    margin-right: 8px; /* Adds spacing between the icon and the text */
+    font-size: 18px; /* Adjust size as needed */
+}
+
+.user-profile {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center content horizontally, adjust as needed */
+    color: white; /* Text and icon color */
+    width: 100%; /* Ensures the div fills the width of its container */
+    margin-bottom: 20px; /* Adds space between the user profile and the first icon */
+    font-size: 16px; /* Adjusts the font size of the text */
+}
+
+.user-profile i {
+    margin-right: 8px; /* Creates space between the icon and the username */
+}
+
+/* section  */
+.section {
+    position: absolute;
+    background-color: #f4f4f4; /* Example color */
+    padding: 20px; /* Adds padding inside sections */
+    box-sizing: border-box; /* Ensures padding does not add to the total width and height */
+}
+
+/* section 1  */
+
+.section-1 {
+    top: 0;
+    left: 15vw;
+    width: 60vw;
+    height: 10vh;
+
+    margin-bottom: 20px; /* Adds space below section-1 */
+    display: flex;
+    justify-content: space-around; /* Adjust as needed to fit content */
+    align-items: center;
+    padding: 20px; /* Consider reducing or adjusting if content needs more space */
+    box-sizing: border-box;
+}
+
+.section-1a {
+    width: 40%; /* Adjusted to your preference */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Aligns content to the start */
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+.section-1b {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+
+    justify-content: center; /* Horizontally centers search bar within .section-1b */
+}
+
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px; /* Adds rounded edges to the search bar */
+    border: 1px solid #ccc; /* Adds a light border to the search bar */
+    outline: none; /* Removes the default focus outline */
+}
+
+/* section 2  */
+.section-2 {
+    display: flex; /* Enables Flexbox layout */
+    flex-wrap: wrap; /* Allows cards to wrap onto the next line */
+    justify-content: space-around; /* Spaces out cards evenly */
+    align-items: flex-start; /* Aligns items at the start of the section */
+    top: 10vh;
+    left: 15vw;
+    width: 60vw;
+    height: 40vh;
+    padding: 5px; /* Padding inside section for spacing around cards */
+    box-sizing: border-box; /* Ensures padding is included in width/height calculation */
+    margin-bottom: 5px;
+}
+
+/* Adjusted .card with flexible width and max-width */
+.card {
+    flex: 1 1 20%; /* Allows flex-grow and flex-shrink with a basis of 40% */
+    max-width: calc(50% - 40px); /* Ensures no more than 2 cards fit in one row, accounting for margin */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: auto; /* Allows card height to adjust based on content */
+    border: 2px solid #69619c;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%; /* Adjust based on preference and available space */
+    margin: 10px; /* Provides space between cards */
+    padding: 10px;
+    background-color: #f0f0f0; /* Light grey background */
+    border-radius: 10px; /* Rounded corners for cards */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.card i {
+    font-size: 24px; /* Icon size, adjust as needed */
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.card p {
+    font-size: 14px; /* Text size, adjust as needed */
+    margin-bottom: 0px; /* Space between text and number */
+}
+
+.card h3 {
+    font-size: 14px; /* Number size, adjust as needed */
+}
+
+/* section 3  */
+.section-3 {
+    top: 0;
+    left: 77vw; /* Adjusted to prevent overflow due to padding */
+    width: 20vw; /* Adjusted to account for left position and padding */
+    height: 35vh;
+    margin-bottom: 20px; /* Adds space below section-3 */
+}
+
+
+/* section 4  */
+.section-4 {
+    top: 50vh;
+    left: 15vw;
+    width: 83vw; /* Adjusted to fill the remaining space correctly */
+    height: 60vh;
+}
+
+.section-4 table {
+    width: 100%; /* Full width of its container */
+    border-collapse: collapse; /* Removes space between borders */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow around the table for depth */
+}
+
+.section-4 th, .section-4 td {
+    text-align: left; /* Aligns text to the left */
+    padding: 12px; /* Increased padding for better spacing */
+    border-bottom: 1px solid #ddd; /* Adds a subtle bottom border to each cell */
+}
+
+.section-4 th {
+    background-color: #a299dc; /* Consistent with your color scheme */
+    color: white; /* Ensures header text is white */
+    font-size: 16px; /* Slightly larger font for headers */
+}
+
+.section-4 td {
+    color: #333; /* Darker text color for better readability */
+    font-size: 14px; /* Slightly smaller font for content */
+}
+
+/* Alternating row colors for better readability */
+.section-4 tr:nth-child(odd) {
+    background-color: #efefef;
+}
+
+.section-4 tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Hover effect for rows */
+.section-4 tr:hover {
+    background-color: #e1e1e1;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* *********** Responsiveness ************* */
+/* For tablets (devices with max width of 768px) */
+@media (max-width: 768px) {
+    .container, .form-container, .image-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center-align the child elements */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .image-container, .form-container {
+        height: auto; /* Adjust height for a vertical layout */
+        width: 100%; /* Use full width of the viewport */
+    }
+
+    .image-section, .form-section {
+        min-width: auto; /* Remove minimum width constraint */
+        width: 90%; /* Use most of the viewport width with some margin */
+    }
+
+    .navbar {
+        width: 20vw; /* Adjust navbar width on tablets */
+    }
+
+    .section-1, .section-2, .section-3 {
+        left: 20vw; /* Adjust left positioning to align with the navbar width */
+        width: 80vw; /* Adjust section widths to fill the remaining viewport */
+    }
+
+    .section-3 {
+        left: 20vw; /* Align with the adjusted navbar width */
+        width: 80vw; /* Take up the remaining space */
+    }
+
+    /* Adjust font sizes and icon sizes for better readability on tablets */
+    .icon-btn i, .user-profile i {
+        font-size: 16px; /* Smaller icons */
+    }
+
+    .icon-btn span, .user-profile span {
+        font-size: 14px; /* Smaller text */
+    }
+
+    .section-4 table, .section-4 th, .section-4 td {
+        display: block;
+    }
+
+    .section-4 th, .section-4 td {
+        width: 100%; /* Each cell takes full width */
+        text-align: right; /* Adjusts text alignment */
+        padding-left: 50%; /* Adds padding to separate text from the edge */
+        position: relative;
+    }
+
+    .section-4 td::before {
+        content: attr(data-label); /* Uses data-label attribute value as content */
+        position: absolute;
+        left: 0;
+        width: 50%; /* Allocates width for the label */
+        padding-left: 8px; /* Padding for the label */
+        font-weight: bold; /* Makes the label bold */
+        text-align: left; /* Aligns the label text to the left */
+    }
+}
+
+/* For mobile devices (devices with max width of 480px) */
+@media (max-width: 480px) {
+    .container, .form-container, .image-container {
+        padding: 5px; /* Reduce padding further for very small screens */
+    }
+
+    .image-section, .form-section {
+        width: 100%; /* Use the entire width of the viewport */
+    }
+
+    /* Adjust text, input, and button sizes for better readability and usability on mobile */
+    .form-group input, .form-group textarea, button {
+        font-size: 14px; /* Increase font size for readability */
+        padding: 12px; /* Increase padding for easier interaction */
+    }
+
+    .role-option {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        padding: 8px; /* Adjust padding for space efficiency */
+    }
+
+    .navbar {
+        width: 25vw; /* Increase width for better touch targets */
+        padding: 10px; /* Adjust padding for space efficiency */
+    }
+
+    .section-1, .section-2, .section-3 {
+        left: 25vw; /* Adjust to new navbar width */
+        width: 75vw; /* Adjust section widths for mobile layout */
+    }
+
+    .section-3 {
+        left: 25vw; /* Ensure alignment with navbar */
+        width: 75vw; /* Adjust for mobile screen */
+    }
+
+    .icon-btn, .user-profile {
+        flex-direction: row; /* Ensure icon and text are inline */
+    }
+
+    .icon-btn i, .user-profile i {
+        font-size: 14px; /* Adjust icon size for mobile */
+    }
+
+    .icon-btn span, .user-profile span {
+        font-size: 12px; /* Adjust text size for mobile */
+    }
+}
